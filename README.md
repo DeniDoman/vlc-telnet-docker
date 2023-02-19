@@ -1,1 +1,1 @@
-# vlc-docker
+# vlc-telnet-docker

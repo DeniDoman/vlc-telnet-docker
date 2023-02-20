@@ -13,7 +13,7 @@ docker run \
     -p 4212:4212 \
     -e "TELNET_PASSWORD=your_original_password" \
     --device=/dev/snd:/dev/snd \
-    quay.io/galexrt/vlc:latest
+    ghcr.io/denidoman/vlc-telnet-docker:main
 ````
 
 Additionally, you can set the following env variables:

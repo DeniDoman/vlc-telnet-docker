@@ -11,12 +11,12 @@ This container contains VLC media player configured to be controlled via telnet.
 docker run \
     -d \
     -p 4212:4212 \
-    -e "TELNET_PASSWORD=your_original_password" \
+    -e TELNET_PASSWORD="_PUT_ORIGINAL_PASSWORD_HERE_" \
     --device=/dev/snd:/dev/snd \
     ghcr.io/denidoman/vlc-telnet-docker:main
 ````
 
-Additionally, you can set the following env variables:
+Additionally, you can set the following optional env variables:
 
 - `SOUND_CARD_NUMBER` (default: `0`) - number of actual sound card in your system. You can use `aplay -l` to see the number assigned to the relevant card. For example, my USB speaker is shown as `card 1`, so I use value `1` here.
 - `VOLUME_CHANNEL` (default: `Master`) - name of volume channel to set a volume level. Usually it's a `Master` channel, you can check it using `alsamixer` command. In my case, `PCM` channel is used.
